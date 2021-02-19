@@ -1,0 +1,26 @@
+{
+  "name": "desafioapi",
+  "version": "1.0.0",
+  "description": "testes apis",
+  "main": "index.js",
+  "Dependencies": {
+    "cucumber": "^7.0.0-rc.0",
+    "cypress": "^6.5.0",
+    "cypress-cucumber-preprocessor": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test:all": "cypress run",
+    "test:TC01": "cypress-tags run -e TAGS=@TC-001",
+    "test:TC02": "cypress-tags run -e TAGS=@TC-002",
+    "test:TC03": "cypress-tags run -e TAGS=@TC-003",
+    "test:TC04": "cypress-tags run -e TAGS=@TC-004"
+   },
+   "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/",
+    "nonGlobalStepDefinitions": false
+  },
+  "author": "Jacson Gomes Mendes",
+  "license": "ISC"
+
+}
